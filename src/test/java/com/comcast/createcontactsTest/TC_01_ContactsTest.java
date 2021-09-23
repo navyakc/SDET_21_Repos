@@ -4,6 +4,14 @@ import org.testng.annotations.Test;
 
 public class TC_01_ContactsTest {
 
+	@Test
+	public void createout()
+	{
+		String BROWSER = System.getProperty("browser");
+		System.out.println(BROWSER);
+		String URL = System.getProperty("url");
+		System.out.println(URL);
+	}
 	
 	@Test(groups="Smoke")
 	public void createContactTest()
