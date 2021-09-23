@@ -46,6 +46,70 @@
 		</plugins>
 	</build>
 	</profile>
+	
+	<profile> 
+	
+<id>ST</id>
+<build> 
+		<plugins>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.19.1</version>
+
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testng_smoke.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	
+	
+	<profile> 
+<id>RR</id>
+<build> 
+		<plugins>
+			<!-- Below plug-in is used to execute tests -->
+			<plugin>
+				
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>2.19.1</version>
+
+				<configuration>
+					<suiteXmlFiles>
+						<!-- TestNG suite XML files -->
+						<suiteXmlFile>testng_RegionalRegression.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	</profiles>
 	
 
