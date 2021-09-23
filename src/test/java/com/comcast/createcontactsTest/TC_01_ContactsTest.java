@@ -26,4 +26,11 @@ public class TC_01_ContactsTest {
 		System.out.println("delete contact");
 	}
 	
+	@Test
+	public void searchContactTest()
+	{
+		System.out.println("search contact");
+	}
+	
+	
 }
